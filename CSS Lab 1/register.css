@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(124, 124, 124);
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span.req::after {
+  content: '*';
+  color: rgb(255, 255, 255);
+}
+
+input:invalid {
+  border-color: black;
+}
+
+input:valid {
+  border-color: white;
+}
+
+input:valid ~ span.hidden {
+  display: none;
+}
+
+a {
+  color: lightblue;
+}
+
+a:visited {
+  color: lightblue;
+}
